@@ -1,0 +1,12 @@
+version: "1.0"
+steps:
+  test:
+    fail_fast: false
+    image: alpine
+    scale:
+      test_1:
+        commands:
+        - exit 1
+      test_2:
+        commands:
+        - echo test_1
