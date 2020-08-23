@@ -1,0 +1,12 @@
+version: "1.0"
+steps:
+  test:
+    services:
+      composition:
+        test: 
+          image: alpine
+          volumes:
+          - ./test:/test
+    image: alpine
+    commands:
+    - echo test
